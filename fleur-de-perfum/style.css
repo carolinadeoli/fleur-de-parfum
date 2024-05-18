@@ -1,0 +1,32 @@
+:root{
+    --fonte-titulo: 'Prata, sans-serif';
+    --verde-escuro: #4B4D3D;
+    --verde-claro: #72745F;
+    --marrom-escuro:#423636;
+    --marrom-claro: #574847;
+    --salmao-escuro: #CC8A87;
+    --salmao-claro: #EABCB9;
+}
+
+
+#titulo-primeiro-banner{
+    color: var(--verde-escuro);
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+}
+
+#txt-perfume-feminino{
+    font-family: var(--fonte-titulo);
+    font-size:1.5em;
+    border-radius:4px;
+    color: var(--verde-claro);
+    text-decoration: none;
+}
+#btn-perfume-feminino{
+    background-color: var(--salmao-claro);
+    width:380px;
+    height:52px;
+    border: none;
+    border-radius: 4px;
+    float:right;
+}
