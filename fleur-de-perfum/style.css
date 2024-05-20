@@ -8,7 +8,7 @@
     --salmao-claro: #EABCB9;
 }
 
-
+/* Banners */
 #titulo-primeiro-banner{
     color: var(--verde-escuro);
     font-family: var(--fonte-titulo);
@@ -29,4 +29,31 @@
     border: none;
     border-radius: 4px;
     float:right;
+}
+#titulo-segundo-banner{
+  
+    color: var(--verde-escuro);
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    text-align: right;
+    margin-bottom: 80px;
+    /* margin-top: 23px; */
+    margin-left: 80px;
+}
+
+#btn-perfume-masculino{
+    float: left;
+    width:380px;
+    height:52px;
+    border: none;
+    border-radius: 4px;
+    background-color: #DDDDD5;
+}
+
+#txt-perfume-masculino{
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    font-size:1.5em;
+    border-radius:4px;
+    color: #8B4D4B;
 }
