@@ -1,28 +1,62 @@
+
 :root{
-    --fonte-titulo: 'Prata, sans-serif';
+    --fonte-principal: 'Prata', sans-serif;
+    --fonte-texto:'Open Sans',sans-serif;
+    --fonte-titulo:'Lato',sans-serif;
     --verde-escuro: #4B4D3D;
-    --verde-claro: #72745F;
+    --verde-claro: rgb(114, 116, 95);
     --marrom-escuro:#423636;
     --marrom-claro: #574847;
     --salmao-escuro: #CC8A87;
     --salmao-claro: #EABCB9;
+    --vermelho: #8B4D4B;
+    --verde-clarissimo: rgb(221, 221, 213);
+    --branco: #FFFFFF;
 }
+
+/* MENU */
+
+.navbar-brand{
+    color:var(--verde-escuro);
+    font-family: var(--fonte-principal);
+    margin-left: 30px;
+}
+.navbar-nav{
+    
+    margin-left: 30px;
+    font-family: var(--fonte-principal);
+    color:var(--verde-escuro);
+    
+}
+
+.pessoais{
+
+    display: flex;
+    margin-left:60px;
+    gap:10px;
+}
+
+
 
 /* Banners */
-#titulo-primeiro-banner{
+
+#banner{
+    z-index:2;
+}
+#titulo-primeiro-banner,#titulo-terceiro-banner{
     color: var(--verde-escuro);
-    font-family: var(--fonte-titulo);
-    font-size: 2.5em;
+    font-family: var(--fonte-principal);
+    font-size: 2em;
 }
 
-#txt-perfume-feminino{
-    font-family: var(--fonte-titulo);
-    font-size:1.5em;
+#txt-perfume-feminino, #txt-hidratante-feminino {
+    font-family: var(--fonte-principal);
+    font-size:1em;
     border-radius:4px;
     color: var(--verde-claro);
     text-decoration: none;
 }
-#btn-perfume-feminino{
+#btn-perfume-feminino, #btn-hidratante-feminino{
     background-color: var(--salmao-claro);
     width:380px;
     height:52px;
@@ -33,15 +67,16 @@
 #titulo-segundo-banner{
   
     color: var(--verde-escuro);
-    font-family: var(--fonte-titulo);
-    font-size: 2.5em;
+    font-family: var(--fonte-principal);
+    font-size: 2em;
     text-align: right;
     margin-bottom: 80px;
     /* margin-top: 23px; */
     margin-left: 80px;
+    
 }
 
-#btn-perfume-masculino{
+#btn-perfume-masculino, #btn-hidratante-masculino{
     float: left;
     width:380px;
     height:52px;
@@ -50,10 +85,294 @@
     background-color: #DDDDD5;
 }
 
-#txt-perfume-masculino{
+#txt-perfume-masculino, #txt-hidratante-masculino{
     text-decoration: none;
-    font-family: var(--fonte-titulo);
-    font-size:1.5em;
+    font-family: var(--fonte-principal);
+    font-size:1em;
     border-radius:4px;
     color: #8B4D4B;
 }
+ #titulo-quarto-banner{
+    color:var(--verde-escuro);
+    font-family: var(--fonte-principal);
+    font-size: 2.5em;
+    text-align: right;
+    margin-bottom: 80px;
+    /* margin-top: 23px; */
+    margin-left: 80px;
+ }
+
+
+/* CARD DE BUSCA */
+
+#categorias-home{
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.titulo-card-salmao, .titulo-card-verde{
+    font-size: 1.125em;
+    text-align: center;
+    padding-top:30px;
+    font-family: var(--fonte-titulo);
+    color:var(--marrom-escuro);
+    
+}
+
+
+.card-verde:hover{
+    transform: scale(1.03);
+    
+}
+
+.card-salmao:hover{
+    transform: scale(1.03);
+}
+
+.card-salmao{
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid var(--salmao-claro);
+    width: 20%;
+    min-height: 80px;
+    box-shadow: rgb(114, 116, 95, 0.2) 0px 7px 29px 0px;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+
+.card-verde{
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid var(--verde-claro);
+    width: 20%;
+    min-height: 80px;
+    box-shadow: rgb(114, 116, 95, 0.2) 0px 7px 29px 0px;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+
+ /* CARDS */
+
+.card-title{
+    font-family: var(--fonte-titulo);
+    color: var(--verde-claro);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.preco-card{
+    color:var(--verde-claro);
+    font-family: var(--fonte-texto);
+    
+}
+
+.botao-card{
+    background-color: var(--verde-claro);
+    font-family: var(--fonte-texto);
+}
+
+.card{
+    box-shadow: rgb(114, 116, 95, 0.2) 0px 7px 29px 0px;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+h1,h2{
+    font-family: var(--fonte-principal);
+    color: var(--verde-escuro);
+    font-size:2em;
+}
+
+
+/* NOSSOS PRODUTOS */
+
+#conheca{
+
+   
+   padding-bottom: 20px;
+   padding-top: 40px;
+
+}
+
+#nossos-produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:60px;
+    background-color: rgb(114, 116, 95,0.2);
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.texto-produtos{
+    margin-top:20px;
+}
+
+.titulo-produtos{
+    font-family: var(--fonte-principal);
+    font-size:1.125em;
+}
+
+.descricao{
+    font-family: var(--fonte-titulo);
+    font-size: 1em;
+}
+
+.detalhe{
+    background-color: #423636;
+    width: 20px;
+    height: 2px;
+    transition: ease 0.4s;
+    margin-bottom:4px;
+    cursor: pointer;
+}
+.detalhe:hover{
+    width:100%;
+    
+}
+
+/* PRODUTOS EM DESTAQUE */
+
+.card-destaque{
+    border: 1px solid var(--verde-claro);
+}
+
+.card-title{
+    font-family: var(--fonte-principal);
+    font-size:20px;
+}
+
+.preco-card{
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+}
+
+.btn-comprar{
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    width:110px; 
+}
+
+.btn-primary:hover{
+    background-color: var(--verde-escuro);
+}
+.btn-primary {
+  background-color: var(--verde-claro);
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Adiciona transição suave */
+}
+
+
+/* NEWSLETTER */
+
+#newsletter{
+     background-image: url('img/banner-newsletter.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Redimensiona a imagem para cobrir completamente a seção */
+    height:240px;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    text-align: center; /* Alinha o texto ao centro */
+    padding-bottom:20px;
+    margin-top:40px;
+}
+
+#newsletter #titulo-newsletter, #descricao-newsletter{
+    color:var(--branco);
+    font-family: var(--fonte-texto);
+
+}
+
+#titulo-newsletter{
+    font-size:20px;
+}
+
+#descricao-newsletter{
+    font-size:1em;
+}
+
+#newsletter input{
+    font-family: var(--fonte-titulo);
+    background-color: var(--verde-clarissimo);
+    font-size: 14px;
+    color:var(--marrom-claro);
+}
+
+#newsletter button{
+    margin-top:20px;
+    font-family: var(--fonte-texto);
+}
+
+.btn-success:hover{
+    background-color: var(--verde-escuro);
+}
+.btn-success{
+  background-color: var(--verde-claro);
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Adiciona transição suave */
+}
+
+/* CATALOGO */
+
+
+.links-pgs{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.links-pgs a{
+    text-decoration: none;
+    color:var(--verde-escuro);
+    font-family: var(--fonte-texto);
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+#todos-itens{
+    display: flex;
+    column-count: 3;
+    justify-content: space-evenly; 
+    margin-top:40px;
+    margin-bottom:20px;
+}
+
+.redes-sociais p{
+    color:var(--verde-escuro);
+    font-family: var(--fonte-texto);
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: var(--verde-escuro);
+    height: 40px;
+}
+
+#footer-texto{
+    font-family:var(--fonte-texto);
+    color:var(--branco);
+    text-align: center;
+    padding-top: 10px;
+
+}
+
